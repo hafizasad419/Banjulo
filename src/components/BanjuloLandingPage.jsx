@@ -26,6 +26,8 @@ export default function BanjuloLandingPage() {
             <Link to="#how-it-works" className="text-gray-600 hover:text-teal-600 pr-16">How It Works</Link>
             <Link to="#contact" className="text-gray-600 hover:text-teal-600 pr-16">Contact</Link>
           </nav>
+
+          
           <button 
             className="md:hidden text-gray-600 focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
