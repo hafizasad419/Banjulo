@@ -14,9 +14,9 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
   return (
-    <header className="bg-teal-600 shadow-md">
+    <header className="bg-navy-500 shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-white hover:text-gold-500 transition-colors duration-300">
+        <Link to="/" className="text-2xl font-bold text-teal-400 transition-colors duration-300">
           BANJULO
         </Link>
 
@@ -26,7 +26,7 @@ export default function Navbar() {
               key={link.name}
               to={link.path}
               className={({ isActive }) =>
-                `text-xl font-semibold px-4 py-2 rounded-md transition-all duration-300 ${isActive ? 'text-gold-500 bg-teal-700' : 'text-white hover:text-gold-500 hover:bg-teal-500'
+                `text-xl font-semibold px-4 py-2 rounded-md transition-all text-white hover:bg-teal-600 duration-300 ${isActive ? 'bg-teal-600' : ''
                 }`
               }
             >
@@ -56,16 +56,16 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3, ease: 'easeInOut' }}
-            className="md:hidden bg-teal-600 overflow-hidden"
+            className="md:hidden bg-navy-500 overflow-hidden"
           >
             {navLinks.map((link) => (
               <NavLink
                 key={link.name}
                 to={link.path}
                 className={({ isActive }) =>
-                  `block px-4 py-3 text-lg font-medium transition-all duration-300 ${isActive
-                    ? 'text-gold-500 bg-teal-700' 
-                    : 'text-white hover:text-gold-500 hover:bg-teal-700'  // 
+                  `block px-4 py-3 text-lg font-medium transition-all duration-300 text-white ${isActive
+                    ? 'bg-teal-600'
+                    : ''  
                   }`
                 }
                 onClick={() => setIsMenuOpen(false)}

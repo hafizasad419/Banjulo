@@ -1,9 +1,77 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { Facebook, Instagram, Twitter } from 'lucide-react'
 
-function Footer() {
+const footerLinks = [
+  {
+    title: 'Quick Links',
+    links: [
+      { name: 'About Us', path: '/about' },
+      { name: 'Mission & Vision', path: '/mission-and-vision' },
+      { name: 'How It Works', path: '/how-it-works' },
+      { name: 'Contact', path: '/contact' },
+    ]
+  },
+  {
+    title: 'Legal',
+    links: [
+      { name: 'Help Center', path: '/help' },
+      { name: 'Terms & Conditions', path: '/terms' },
+    ]
+  },
+  {
+    title: 'Follow Us',
+    socialLinks: [
+      { name: 'Facebook', icon: Facebook, url: '#' },
+      { name: 'Instagram', icon: Instagram, url: '#' },
+      { name: 'Twitter', icon: Twitter, url: '#' },
+    ]
+  }
+]
+
+export default function Footer() {
   return (
-    <footer>Footer</footer>
+    <footer className="bg-navy-500 text-white py-8">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-col lg:flex-row lg:justify-between">
+          <div className="mb-8 lg:mb-0">
+            <Link to="/" className="text-3xl font-bold text-teal-400 hover:text-teal-300 transition-colors duration-300">
+              BANJULO
+            </Link>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {footerLinks.map((section, index) => (
+              <div key={index}>
+                <h3 className="text-lg font-semibold mb-4">{section.title}</h3>
+                {section.links && (
+                  <ul className="space-y-2">
+                    {section.links.map((link, linkIndex) => (
+                      <li key={linkIndex}>
+                        <Link to={link.path} className="hover:text-teal-400 transition-colors duration-300">
+                          {link.name}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+                {section.socialLinks && (
+                  <div className="flex space-x-4">
+                    {section.socialLinks.map((social, socialIndex) => (
+                      <a key={socialIndex} href={social.url} className="hover:text-teal-400 transition-colors duration-300">
+                        <social.icon className="h-6 w-6" />
+                        <span className="sr-only">{social.name}</span>
+                      </a>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+        <div className="mt-8 text-center">
+          <p>&copy; {new Date().getFullYear()} Banjulo.com. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   )
 }
-
-export default Footer

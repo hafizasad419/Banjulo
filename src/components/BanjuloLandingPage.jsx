@@ -47,13 +47,13 @@ export default function BanjuloLandingPage() {
 
       <main className="flex-grow">
         <section className="relative h-screen flex items-center justify-center bg-gray-100">
-          {/* <img
-            src="/placeholder.svg?height=1080&width=1920"
+          <img
+            src="https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             alt="Gambian artisans and products"
             layout="fill"
             objectFit="cover"
             className="absolute inset-0"
-          /> */}
+          />
           <div className="absolute inset-0 bg-black opacity-50"></div>
           <div className="relative z-10 text-center text-white">
             <h1 className="text-4xl md:text-6xl font-bold mb-4 drop-shadow-lg">Banjulo.com - Shop Smart, Sell Smart</h1>
