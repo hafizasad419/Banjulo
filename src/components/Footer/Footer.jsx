@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { Facebook, Instagram, Twitter } from 'lucide-react'
+import { SiPaypal, SiVisa, SiMastercard } from 'react-icons/si'
+
 
 const footerLinks = [
   {
@@ -27,6 +29,12 @@ const footerLinks = [
       { name: 'Twitter', icon: Twitter, url: '#' },
     ]
   }
+]
+
+const paymentIcons = [
+  { name: 'PayPal', icon: <SiPaypal className="w-8 h-8" /> },
+  { name: 'Visa', icon: <SiVisa className="w-8 h-8" /> },
+  { name: 'MasterCard', icon: <SiMastercard className="w-8 h-8" /> },
 ]
 
 export default function Footer() {
@@ -68,7 +76,18 @@ export default function Footer() {
             ))}
           </div>
         </div>
-        <div className="mt-8 text-center">
+        <div className="my-12 md:mt-8 flex flex-col items-center">
+          <div className="mb-4">
+            <h3 className="text-lg font-semibold mb-2">Secure Payments</h3>
+            <div className="flex space-x-4">
+              {paymentIcons.map((icon, index) => (
+                <div key={index} className="text-gray-400 hover:text-white transition-colors duration-300">
+                  {icon.icon}
+                  <span className="sr-only">{icon.name}</span>
+                </div>
+              ))}
+            </div>
+          </div>
           <p>&copy; {new Date().getFullYear()} Banjulo.com. All rights reserved.</p>
         </div>
       </div>
