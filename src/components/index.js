@@ -6,6 +6,9 @@ import HowItWorks from "./HowItWorks/HowItWorks"
 import Layout from "./Layout/Layout"
 import MissionAndVision from "./MissionAndVision/MissionAndVision"
 import Navbar from "./Navbar/Navbar"
+import SlidesAndText from "./SlidesAndText/SlidesAndText"
+import TermsAndConditions from "./TermsAndConditions/TermsAndConditions"
+import TickerAnimation from "./TickerAnimation/TickerAnimation"
 
 
 
@@ -21,4 +24,7 @@ export {
     Contact,
     MissionAndVision,
     HowItWorks,
+    SlidesAndText,
+    TickerAnimation,
+    TermsAndConditions
 }

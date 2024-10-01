@@ -17,7 +17,7 @@ const footerLinks = [
   {
     title: 'Legal',
     links: [
-      { name: 'Help Center', path: '/help' },
+      { name: 'Help Center', path: '/contact' },
       { name: 'Terms & Conditions', path: '/terms' },
     ]
   },
