@@ -2,7 +2,20 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { UserPlus, Search, ShoppingCart, Truck, Store, BarChart, Globe, Heart } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import { Slides } from '../'
 
+import slide1 from "../../assets/slides/slide6.jpg"
+// import slide2 from "../../assets/slides/slide3.jpeg"
+import slide3 from "../../assets/About/artisans2.jpeg"
+import slide4 from "../../assets/About/online-shopping-ai.png"
+
+
+const slides = [
+  { image: slide1, alt: "Slide 1" },
+  // { image: slide2, alt: "Slide 2" },
+  { image: slide3, alt: "Slide 3" },
+  { image: slide4, alt: "Slide 4" },
+];
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
   visible: { opacity: 1, y: 0 }
@@ -139,6 +152,11 @@ const HowItWorks = () => {
           className="text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-navy-500 mb-6">Ready to Get Started?</h2>
+
+          <div className="flex justify-center my-4">
+            <img
+              className='md:w-1/3 w-full rounded-full'
+              src={slide3} alt="Gmabian Artisans Smiling" /></div>
           <p className="text-left text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
             Whether you're an artisan looking to showcase your crafts or a shopper seeking unique Gambian products, Banjulo.com is your gateway to a world of authentic handmade treasures.
           </p>

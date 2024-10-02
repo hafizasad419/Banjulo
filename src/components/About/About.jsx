@@ -3,6 +3,27 @@ import { motion } from 'framer-motion'
 import { ShoppingBag, Globe, Heart, Users, Zap, Award } from 'lucide-react'
 import assanJeng from "../../assets/avatar/assan-jeng-pfp.png"
 import { Link } from 'react-router-dom'
+import SlidesAndText from '../SlidesAndText/SlidesAndText'
+import { Slides } from '../'
+import slide1 from "../../assets/About/slide1.jpeg"
+import slide2 from "../../assets/About/slide2.jpeg"
+import slide3 from "../../assets/About/slide3.jpeg"
+import slide4 from "../../assets/About/slide4.jpeg"
+import slide5 from "../../assets/About/slide5.jpeg"
+import slide6 from "../../assets/About/slide6.jpeg"
+import slide7 from "../../assets/About/slide7.jpeg"
+
+
+const slides = [
+  { image: slide3, alt: "Slide 3" },
+  { image: slide1, alt: "Slide 1" },
+  { image: slide2, alt: "Slide 2" },
+  { image: slide4, alt: "Slide 4" },
+  { image: slide5, alt: "Slide 5" },
+  { image: slide6, alt: "Slide 6" },
+  { image: slide7, alt: "Slide 7" },
+];
+
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -44,6 +65,10 @@ const About = () => {
           <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-bold text-navy-500 mb-6 text-center">
             Who are we?
           </motion.h2>
+           {/* Slider Section */}
+           <div className="py-8 flex justify-center">
+            <Slides slides={slides} />
+          </div>
           <motion.p variants={fadeIn} className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto text-left md:text-center">
             Banjulo.com is more than just an e-commerce platform; it's a movement dedicated to empowering Gambian artisans and preserving the rich cultural heritage of The Gambia.
             <br />
@@ -144,9 +169,17 @@ const About = () => {
           className="text-center"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-navy-500 mb-6">Join Us on Our Journey</h2>
+
+
+
+         
+
+
           <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-            Whether you're looking to purchase unique handmade goods or support Gambian artisans, Banjulo.com offers a one-of-a-kind experience that connects people across borders and celebrates the beauty of The Gambia.
+            Whether you're looking to purchase unique handmade goods or support Gambian artisans, Banjulo.com offers a one-of-a-kind experience that connects people and enable them to celebrates the beauty of The Gambia.
           </p>
+
+
           <Link
             to={"/contact"}
             className="inline-block bg-teal-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 hover:bg-teal-700"

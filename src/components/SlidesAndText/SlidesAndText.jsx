@@ -23,7 +23,7 @@ const SlidesAndText = ({ title, textContent, slides }) => {
                             {title}
                         </h2>
                         <div className="space-y-4 text-navy-500 text-lg md:text-xl">
-                            {textContent.map((text, index) => (
+                            {textContent?.map((text, index) => (
                                 <p key={index}>{text}</p>
                             ))}
                         </div>
@@ -33,7 +33,7 @@ const SlidesAndText = ({ title, textContent, slides }) => {
                     <div className="md:w-1/2">
                         <div className="rounded-xl">
                             <Slider {...settings}>
-                                {slides.map((slide, index) => (
+                                {slides?.map((slide, index) => (
                                     <div key={index} className="w-full">
                                         <img
                                             loading="lazy"
