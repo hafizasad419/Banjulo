@@ -143,13 +143,14 @@ const About = () => {
           <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-bold text-navy-500 mb-6 text-center">
             Our Commitment
           </motion.h2>
-          <motion.ul variants={staggerChildren} className="space-y-4 max-w-3xl mx-auto">
+          <motion.ul variants={staggerChildren} className="space-y-4 max-w-5xl mx-auto">
             {[
-              "Empowering artisans with tools for success in the digital age",
-              "Supporting sustainable growth of The Gambia's artisan economy",
-              "Providing exceptional shopping experiences for our customers",
-              "Promoting ethical business practices and fair compensation",
-              "Preserving and promoting Gambian cultural heritage"
+              "Empowering Local Sellers: Providing individuals and businesses with the tools to thrive in the digital marketplace.",
+              "Fostering Economic Growth: Supporting the sustainable development of The Gambia's economy by giving local sellers more visibility and opportunities.",
+              "Delivering Outstanding Shopping Experiences: Ensuring a seamless, reliable, and enjoyable experience for every customer.",
+              "Promoting Ethical Business Practices: Encouraging transparency, fairness, and trust for both buyers and sellers.",
+              "Celebrating Gambian Culture: Preserving and promoting the rich cultural heritage of The Gambia through our platform.",
+              "Join Us on Our Journey: Whether you're looking to purchase a variety of products or support local Gambian businesses, Banjulo.com offers a unique experience that connects people and celebrates the heart of The Gambia."
             ].map((item, index) => (
               <motion.li
                 key={index}

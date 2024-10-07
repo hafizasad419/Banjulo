@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
-import { CheckCircle, Globe, TrendingUp, ShoppingBag, X } from 'lucide-react'
+import { BadgeCheck, Lock, CheckCircle, Globe, TrendingUp, ShoppingBag, X } from 'lucide-react'
+
 
 const fadeIn = {
     hidden: { opacity: 0, y: 20 },
@@ -23,33 +24,49 @@ const WhyBanjulo = () => {
     const reasons = [
         {
             icon: CheckCircle,
-            title: "Authenticity at Your Fingertips",
-            description: "Banjulo.com connects you with genuine products crafted by local artisans and businesses, reflecting the rich culture and creativity of The Gambia."
+            title: "Empower Local Sellers",
+            description: "Support Gambian businesses and individuals by buying directly from local sellers, helping boost the local economy."
         },
         {
             icon: TrendingUp,
-            title: "Empowering Local Entrepreneurs",
-            description: "Each purchase supports Gambian artisans, small businesses, and communities, fostering economic growth and promoting sustainable development by giving local entrepreneurs a global stage."
+            title: "Diverse Range of Products",
+            description: "From household items and electronics to handmade crafts and services, find a variety of unique products for every need."
         },
         {
             icon: Globe,
-            title: "Beyond Gambia",
-            description: "We provide secure shipping to Senegal and neighboring countries, with easy tracking and dependable delivery to ensure a hassle-free experience for customers in the region."
+            title: "Local Focus, Regional Reach",
+            description: "Whether you're in The Gambia or neighboring countries, Banjulo.com connects buyers and sellers across the region with ease."
+        },
+        {
+            icon: Lock,
+            title: "Secure Transactions",
+            description: "Shop with confidence using our trusted and secure payment methods for a seamless buying experience."
+        },
+        {
+            icon: ShoppingBag,
+            title: "Real-Time Order Tracking",
+            description: "Keep track of your purchases from the moment you place your order until it's delivered."
+        },
+        {
+            icon: BadgeCheck,
+            title: "Dedicated Customer Support",
+            description: "Our team is always ready to assist you with any inquiries or issues, ensuring a smooth shopping experience."
         }
     ];
+    
 
 
     const featuredProducts = [
-        { id: 1, name: "Handwoven Basket", price: 9.99, image: "https://images.pexels.com/photos/28617395/pexels-photo-28617395/free-photo-of-handcrafted-woven-baskets-and-bird-nests.jpeg?auto=compress&cs=tinysrgb&w=600" },
-        { id: 2, name: "Traditional Gambian Dress", price: 14.99, image: "https://i.etsystatic.com/20855353/r/il/16f081/6011032382/il_600x600.6011032382_dhqr.jpg" },
-        { id: 3, name: "Carved Wooden Mask", price: 4.99, image: "https://images.pexels.com/photos/9540964/pexels-photo-9540964.jpeg?auto=compress&cs=tinysrgb&w=600" },
-        { id: 4, name: "Gambia Shirt", price: 9.99, image: "https://i.etsystatic.com/36226661/r/il/db01c8/4325988175/il_300x300.4325988175_ijqq.jpg" },
-        { id: 5, name: "Recycled Glass Bead Necklace", price: 12.99, image: "https://i.etsystatic.com/20263357/r/il/a56f44/3862659697/il_600x600.3862659697_b33n.jpg" },
-        { id: 6, name: "Hand-Carved Soapstone Elephant", price: 19.99, image: "https://i.etsystatic.com/45956111/r/il/ceec3a/5618540282/il_600x600.5618540282_o99x.jpg" },
-        { id: 7, name: "African Drum (Djembe)", price: 29.99, image: "https://i.etsystatic.com/30640062/r/il/ea0d1d/6162141198/il_600x600.6162141198_l6j0.jpg" },
-        { id: 8, name: "Kente Cloth Fabric", price: 24.99, image: "https://i.etsystatic.com/17686157/r/il/68d6c8/4433536748/il_600x600.4433536748_6p4b.jpg" }
+        { id: 1, name: "Handwoven Basket", price: 250, image: "https://images.pexels.com/photos/28617395/pexels-photo-28617395/free-photo-of-handcrafted-woven-baskets-and-bird-nests.jpeg?auto=compress&cs=tinysrgb&w=600" },
+        { id: 2, name: "Traditional Gambian Dress", price: 699, image: "/fp2.jpeg" },
+        { id: 3, name: "Carved Wooden Mask", price: 240, image: "https://images.pexels.com/photos/9540964/pexels-photo-9540964.jpeg?auto=compress&cs=tinysrgb&w=600" },
+        { id: 4, name: "Gambia Shirt", price: 150, image: "/fp1.jpeg" },
+        { id: 5, name: "Recycled Glass Bead Necklace", price: 499, image: "https://i.etsystatic.com/20263357/r/il/a56f44/3862659697/il_600x600.3862659697_b33n.jpg" },
+        { id: 6, name: "Traditional Shoes", price: 799, image: "/fp3.jpeg" },
+        { id: 7, name: "African Drum (Djembe)", price: 1199, image: "https://i.etsystatic.com/30640062/r/il/ea0d1d/6162141198/il_600x600.6162141198_l6j0.jpg" },
+        { id: 8, name: "Kente Cloth Fabric", price: 999, image: "https://i.etsystatic.com/17686157/r/il/68d6c8/4433536748/il_600x600.4433536748_6p4b.jpg" }
     ];
-    
+
 
     return (
         <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
@@ -91,7 +108,7 @@ const WhyBanjulo = () => {
                             <img
                                 src={product.image}
                                 alt={product.name}
-                                className="w-full h-48 object-cover rounded-lg"
+                                className="w-full h-60 object-cover rounded-lg"
                             />
                             <div className="absolute inset-0 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg flex items-center justify-center">
                                 <button
@@ -125,7 +142,7 @@ const WhyBanjulo = () => {
                                 className="w-[95%] h-48 object-cover rounded-lg mb-4"
                             />
                             <h3 className="text-xl font-semibold text-navy-500 mb-2">{selectedProduct.name}</h3>
-                            <p className="text-gray-600 mb-4">${selectedProduct.price.toFixed(2)}</p>
+                            <p className="text-gray-600 mb-4">{selectedProduct.price.toFixed()} GMD</p>
 
                         </div>
                     </motion.div>
