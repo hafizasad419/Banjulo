@@ -3,6 +3,8 @@ import { motion } from 'framer-motion'
 import { UserPlus, Search, ShoppingCart, Truck, Store, BarChart, Globe, Heart } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import { Slides } from '../'
+import EarnMoney from "../Home/HomeMisc/EarnMoney"
+
 
 import slide1 from "../../assets/slides/slide6.jpg"
 // import slide2 from "../../assets/slides/slide3.jpeg"
@@ -119,6 +121,8 @@ const HowItWorks = () => {
             ))}
           </motion.div>
         </motion.section>
+
+      <EarnMoney/>
 
         <motion.section
           initial="hidden"
