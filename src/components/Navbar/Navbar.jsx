@@ -15,11 +15,12 @@ export default function Navbar() {
 
   return (
     <header className="bg-navy-500 shadow-md">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-teal-400 transition-colors duration-300">
-          <img 
+      <div className="container mx-auto px-4 py-6 flex justify-between items-center">
+        <Link to="/" className="font-lobster md:text-3xl text-2xl font-extrabold text-teal-400 hover:text-gray-300 transition-colors duration-300">
+          {/* <img 
           className='rounded w-24'
-          src={`/logo-cropped.jpg`} alt="" />
+          src={`/logo-cropped.jpg`} alt="" /> */}
+          B a n j u l o 
         </Link>
 
         <nav className="hidden md:flex space-x-4 py-2">
@@ -67,7 +68,7 @@ export default function Navbar() {
                 className={({ isActive }) =>
                   `block px-4 py-3 text-lg font-medium transition-all duration-300 text-white ${isActive
                     ? 'bg-teal-600'
-                    : ''  
+                    : ''
                   }`
                 }
                 onClick={() => setIsMenuOpen(false)}

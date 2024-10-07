@@ -123,9 +123,9 @@ const About = () => {
           </motion.div>
           <motion.div variants={fadeIn} className="text-center">
             <img
-              src={`/logo.jpg`}
+              src={`/story.jpg`}
               alt="Assan Jeng"
-              className="w-48 h-48 rounded-full mx-auto mb-4 object-cover"
+              className="w-56 h-56 rounded-full mx-auto mb-4 object-cover"
             />
             <a href='https://www.linkedin.com/company/banjulo' target='_blank' className='text-2xl mb-2 text-teal-500 font-bold'>The Banjulo Team</a>
             <blockquote className="italic text-lg text-gray-700 max-w-3xl mx-auto my-2  text-left">

@@ -8,6 +8,8 @@ export default {
     extend: {
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],
+        archivo: ['Archivo Black', 'sans-serif'],
+        lobster: ['Lobster', 'sans-serif'],
       },
       colors: {
         teal: {
