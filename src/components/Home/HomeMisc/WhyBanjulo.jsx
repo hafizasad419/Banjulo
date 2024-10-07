@@ -23,27 +23,33 @@ const WhyBanjulo = () => {
     const reasons = [
         {
             icon: CheckCircle,
-            title: "Authenticity Guaranteed",
-            description: "We work directly with local artisans to bring you authentic, handmade products that showcase the rich cultural heritage of The Gambia."
+            title: "Authenticity at Your Fingertips",
+            description: "Banjulo.com connects you with genuine products crafted by local artisans and businesses, reflecting the rich culture and creativity of The Gambia."
         },
         {
             icon: TrendingUp,
-            title: "Support Local Communities",
-            description: "Every purchase empowers local artisans and contributes to sustainable development in The Gambia, making a real impact on people's lives."
+            title: "Empowering Local Entrepreneurs",
+            description: "Each purchase supports Gambian artisans, small businesses, and communities, fostering economic growth and promoting sustainable development by giving local entrepreneurs a global stage."
         },
         {
             icon: Globe,
-            title: "Worldwide Shipping",
-            description: "We offer secure shipping to customers around the globe, with easy tracking to ensure your unique Gambian treasures reach you safely."
+            title: "Beyond Gambia",
+            description: "We provide secure shipping to Senegal and neighboring countries, with easy tracking and dependable delivery to ensure a hassle-free experience for customers in the region."
         }
-    ]
+    ];
+
 
     const featuredProducts = [
         { id: 1, name: "Handwoven Basket", price: 9.99, image: "https://images.pexels.com/photos/28617395/pexels-photo-28617395/free-photo-of-handcrafted-woven-baskets-and-bird-nests.jpeg?auto=compress&cs=tinysrgb&w=600" },
         { id: 2, name: "Traditional Gambian Dress", price: 14.99, image: "https://i.etsystatic.com/20855353/r/il/16f081/6011032382/il_600x600.6011032382_dhqr.jpg" },
         { id: 3, name: "Carved Wooden Mask", price: 4.99, image: "https://images.pexels.com/photos/9540964/pexels-photo-9540964.jpeg?auto=compress&cs=tinysrgb&w=600" },
-        { id: 4, name: "Gambia Shirt", price: 9.99, image: "https://i.etsystatic.com/36226661/r/il/db01c8/4325988175/il_300x300.4325988175_ijqq.jpg" }
-    ]
+        { id: 4, name: "Gambia Shirt", price: 9.99, image: "https://i.etsystatic.com/36226661/r/il/db01c8/4325988175/il_300x300.4325988175_ijqq.jpg" },
+        { id: 5, name: "Recycled Glass Bead Necklace", price: 12.99, image: "https://i.etsystatic.com/20263357/r/il/a56f44/3862659697/il_600x600.3862659697_b33n.jpg" },
+        { id: 6, name: "Hand-Carved Soapstone Elephant", price: 19.99, image: "https://i.etsystatic.com/45956111/r/il/ceec3a/5618540282/il_600x600.5618540282_o99x.jpg" },
+        { id: 7, name: "African Drum (Djembe)", price: 29.99, image: "https://i.etsystatic.com/30640062/r/il/ea0d1d/6162141198/il_600x600.6162141198_l6j0.jpg" },
+        { id: 8, name: "Kente Cloth Fabric", price: 24.99, image: "https://i.etsystatic.com/17686157/r/il/68d6c8/4433536748/il_600x600.4433536748_6p4b.jpg" }
+    ];
+    
 
     return (
         <div className="bg-white py-12 px-4 sm:px-6 lg:px-8">
@@ -54,7 +60,7 @@ const WhyBanjulo = () => {
                 className="max-w-7xl mx-auto"
             >
                 <motion.h2 variants={fadeIn} className="text-3xl md:text-5xl font-bold text-navy-500 text-center mb-12">
-                    Why Shop with Banjulo?
+                    Why Choose Banjulo?
                 </motion.h2>
 
                 <motion.div variants={staggerChildren} className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
@@ -71,7 +77,7 @@ const WhyBanjulo = () => {
                     ))}
                 </motion.div>
 
-                <motion.h3 variants={fadeIn} className="text-2xl font-bold text-navy-500 text-center mb-8">
+                <motion.h3 variants={fadeIn} className="text-3xl md:text-5xl font-bold text-navy-500 text-center  mb-8">
                     Featured Products
                 </motion.h3>
 

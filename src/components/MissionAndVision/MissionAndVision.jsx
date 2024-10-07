@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Compass, Target, Globe, Users, Briefcase, Palette } from 'lucide-react'
+import { Compass, Target, Globe, Users, BriefcaseBusiness, Palette } from 'lucide-react'
 import slide1 from '../../assets/slides/slide1.jpeg'
 import slide2 from '../../assets/slides/slide2.jpeg'
 import slide3 from '../../assets/slides/slide3.jpeg'
@@ -61,7 +61,7 @@ const MissionAndVision = () => {
       >
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">Our Mission & Vision</h1>
         <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-          Empowering Gambian artisans and preserving cultural heritage through innovative e-commerce
+          Empowering Gambian artisans, Individuals and Businesses
         </p>
       </motion.header>
 
@@ -75,14 +75,14 @@ const MissionAndVision = () => {
           <motion.div variants={fadeIn} className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-navy-500 mb-6">Our Mission</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              Banjulo.com aims to revolutionize e-commerce in The Gambia by empowering local artisans, preserving cultural heritage, and driving economic growth through innovative solutions.
+              Banjulo.com aims to revolutionize e-commerce in The Gambia by empowering local artisans, Individuals and Businesses to drive economic growth through innovative solutions.
             </p>
           </motion.div>
           <motion.div variants={staggerChildren} className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: Compass, title: "Empower Artisans", description: "Provide a platform for local craftspeople to showcase their talents" },
-              { icon: Target, title: "Preserve Culture", description: "Celebrate and promote Gambian cultural heritage" },
-              { icon: Briefcase, title: "Drive Growth", description: "Stimulate economic development through e-commerce" }
+              { icon: Compass, title: "Empower Artisans & Businesses", description: "Empower Gambian artisans, individuals, and businesses by offering them a platform to sell their products and services locally and globally." },
+              { icon: Target, title: "Preserve Culture", description: "Showcase and preserve Gambian culture while providing an online space for all types of products." },
+              { icon: BriefcaseBusiness, title: "Drive Growth", description: "Promote economic growth by facilitating digital commerce in The Gambia" }
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -108,12 +108,14 @@ const MissionAndVision = () => {
           <motion.div variants={fadeIn} className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-navy-500 mb-6">Our Vision</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              To be the leading e-commerce platform in The Gambia, driving economic growth while celebrating the country's unique cultural heritage.
+              To be the leading e-commerce platform in The Gambia, driving local businesses’
+              success while promoting the country’s rich culture on the global stage.
+
             </p>
           </motion.div>
           <motion.div variants={staggerChildren} className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: Globe, title: "Global Reach", description: "Connect Gambian artisans with customers worldwide" },
+              { icon: Globe, title: "Wider Reach", description: "Connect Gambian artisans and businesses with customers  " },
               { icon: Users, title: "Community Building", description: "Foster a thriving ecosystem of artisans and art enthusiasts" },
               { icon: Palette, title: "Cultural Showcase", description: "Highlight the rich diversity of Gambian craftsmanship" }
             ].map((item, index) => (

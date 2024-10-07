@@ -44,9 +44,10 @@ export default function LandingPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4, duration: 0.8 }}
-            className="text-lg sm:text-xl md:text-2xl mb-8"
+            className="text-lg sm:text-xl md:text-2xl mb-8 font-bold"
           >
-            Connecting Gambian artisans with the world
+            Empowering Local Businesses, <span className="text-teal-400">
+              Connecting Gambia.</span>
           </motion.p>
 
           <motion.form

@@ -65,22 +65,22 @@ const About = () => {
           <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-bold text-navy-500 mb-6 text-center">
             Who are we?
           </motion.h2>
-           {/* Slider Section */}
-           <div className="py-8 flex justify-center">
+          {/* Slider Section */}
+          <div className="py-8 flex justify-center">
             <Slides slides={slides} />
           </div>
           <motion.p variants={fadeIn} className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto text-left md:text-center">
-            Banjulo.com is more than just an e-commerce platform; it's a movement dedicated to empowering Gambian artisans and preserving the rich cultural heritage of The Gambia.
-            <br />
-            <br />
-            By providing a global marketplace, we enable local artisans to share their crafts with the world, promoting economic growth and celebrating unique traditions.
+            Banjulo.com is a versatile platform that caters to everyone. Whether you're an
+            artisan, a business, or an individual, our marketplace provides the tools you need to reach a
+            global audience. By combining local culture with global e-commerce trends, Banjulo.com
+            helps foster economic growth while celebrating Gambian heritage.
           </motion.p>
           <motion.div
             variants={staggerChildren}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
             {[
-              { icon: ShoppingBag, title: "Global Marketplace", description: "Connect Gambian artisans with customers worldwide" },
+              { icon: ShoppingBag, title: "Global Marketplace", description: "Connect Gambian artisans and Businesses with customers  " },
               { icon: Globe, title: "Cultural Preservation", description: "Promote and preserve Gambian cultural heritage" },
               { icon: Heart, title: "Artisan Empowerment", description: "Support local artisans in growing their businesses" },
               { icon: Users, title: "Community Building", description: "Foster a community of artisans and art enthusiasts" },
@@ -111,7 +111,7 @@ const About = () => {
           </motion.h2>
           <motion.div variants={fadeIn} className="bg-gray-100 rounded-lg py-8 px-4 mb-8">
             <p className="text-lg text-gray-700 mb-4">
-              Banjulo.com was founded by <a href='https://www.linkedin.com/in/assanjeng/' target='_blank' className='text-teal-500 font-bold'>Assan Jeng,</a> a Gambian entrepreneur with extensive international experience in companies like Deel, Alteryx, and Oracle. Assan recognized the untapped potential of Gambian artisans and the lack of an efficient platform to connect their work with buyers worldwide.
+              Banjulo.com was founded by <a href='https://www.linkedin.com/in/assanjeng/' target='_blank' className='text-teal-500 font-bold'>Assan Jeng,</a> a Gambian entrepreneur with extensive international experience in companies like Deel, Alteryx, and Oracle. Assan recognized the untapped potential of Gambian artisans and the lack of an efficient platform to connect their work with buyers  .
             </p>
             <p className="text-lg text-gray-700">
               Assan's vision was to create a marketplace that empowers these artisans and highlights the unique beauty of Gambian craftsmanship. What started as an idea has now blossomed into a thriving platform that connects Gambian artisans to a global audience, fostering economic growth and cultural preservation.
@@ -172,7 +172,7 @@ const About = () => {
 
 
 
-         
+
 
 
           <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">

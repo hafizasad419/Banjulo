@@ -34,16 +34,21 @@ const staggerChildren = {
 const HowItWorks = () => {
   const steps = [
     { icon: UserPlus, title: "Sign Up", description: "Create an account quickly and securely" },
-    { icon: Search, title: "Discover", description: "Browse products with advanced filters" },
-    { icon: ShoppingCart, title: "Shop", description: "Add items to cart and checkout securely" },
+    {
+      icon: Search, title: "Discover", description: "Use advanced search filters to browse categories like electronics, fashion, handcrafted items, or services"
+    },
+    {
+      icon: ShoppingCart, title: "Shop Confidently",
+      description: " Secure payment methods and real-time shipping information ensure a smooth shopping experience."
+    },
     { icon: Truck, title: "Delivery", description: "Track your order in real-time" }
   ]
 
   const features = [
     { icon: Store, title: "Create Your Shop", description: "Artisans can easily set up their online store" },
-    { icon: BarChart, title: "Manage Orders", description: "Track sales and process orders efficiently" },
-    { icon: Globe, title: "Global Reach", description: "Connect with customers worldwide" },
-    { icon: Heart, title: "Support Artisans", description: "Every purchase directly supports local craftspeople" }
+    { icon: BarChart, title: "Sell with Ease", description: "Seamlessly list products, set prices, and manage inventory with easy-to-use tools." },
+    { icon: Globe, title: "Global Reach", description: "Connect with customers  " },
+    { icon: Heart, title: "Support Artisans and Businesses", description: "Every purchase directly supports local craftspeople" }
   ]
 
   return (
@@ -68,7 +73,7 @@ const HowItWorks = () => {
           className="mb-16"
         >
           <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-bold text-navy-500 mb-6 text-center">
-            For Shoppers
+            For Buyers
           </motion.h2>
           <motion.div variants={staggerChildren} className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {steps.map((step, index) => (
@@ -94,7 +99,7 @@ const HowItWorks = () => {
           className="mb-16"
         >
           <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-bold text-navy-500 mb-6 text-center">
-            For Artisans
+            For Sellers
           </motion.h2>
           <motion.div variants={staggerChildren} className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {features.map((feature, index) => (

@@ -102,7 +102,7 @@ export default function BanjuloLandingPage() {
                 <ul className="list-disc pl-6 space-y-2">
                   <li>Empowering local artisans and businesses by providing a platform to showcase and sell their products.</li>
                   <li>Fostering economic growth and development in The Gambia through e-commerce.</li>
-                  <li>Connecting buyers worldwide with unique, high-quality Gambian products.</li>
+                  <li>Connecting buyers   with unique, high-quality Gambian products.</li>
                   <li>Promoting and preserving the rich cultural heritage of The Gambia through a vibrant online marketplace.</li>
                 </ul>
               </div>

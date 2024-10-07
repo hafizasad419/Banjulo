@@ -25,7 +25,7 @@ const Testimonials = () => {
       role: "Artisan",
       image: "https://images.unsplash.com/photo-1507152927179-bc4ebfef7103?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJsYWNrJTIwcGVyc29ufGVufDB8fDB8fHww",
       productImage: "/placeholder.svg?height=200&width=200",
-      quote: "Banjulo has transformed my business. I can now reach customers worldwide and showcase my traditional Gambian textiles to a global audience.",
+      quote: "Banjulo has transformed my business. I can now reach customers   and showcase my traditional Gambian textiles to a global audience.",
       rating: 5
     },
     {
@@ -66,7 +66,7 @@ const Testimonials = () => {
         className="max-w-7xl mx-auto"
       >
         <motion.h2 variants={fadeIn} className="text-3xl md:text-5xl font-bold text-navy-500 text-center mb-12">
-          Hear from Our Early Supporters
+          What Our Users Are Saying?
         </motion.h2>
 
         <motion.div variants={staggerChildren} className="grid grid-cols-1 md:grid-cols-2 gap-8">

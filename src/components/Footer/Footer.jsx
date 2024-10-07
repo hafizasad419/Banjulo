@@ -43,9 +43,11 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row lg:justify-between">
           <div className="mb-8 lg:mb-0">
-            <Link to="/" className="text-3xl font-bold text-teal-400 hover:text-teal-300 transition-colors duration-300">
-              BANJULO
-            </Link>
+          <Link to="/" className="text-2xl font-bold text-teal-400 transition-colors duration-300">
+          <img 
+          className='rounded w-24'
+          src={`/logo-cropped.jpg`} alt="" />
+        </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {footerLinks.map((section, index) => (

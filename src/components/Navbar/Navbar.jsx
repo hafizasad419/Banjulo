@@ -17,7 +17,9 @@ export default function Navbar() {
     <header className="bg-navy-500 shadow-md">
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold text-teal-400 transition-colors duration-300">
-          BANJULO
+          <img 
+          className='rounded w-24'
+          src={`/logo-cropped.jpg`} alt="" />
         </Link>
 
         <nav className="hidden md:flex space-x-4 py-2">
