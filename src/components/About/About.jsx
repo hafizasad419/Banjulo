@@ -48,9 +48,10 @@ const About = () => {
         variants={fadeIn}
         className="bg-teal-600 text-white py-20 px-4 text-center"
       >
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">About Banjulo.com</h1>
-        <p className="text-xl md:text-2xl max-w-3xl mx-auto">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">About <span> Banjulo.com</span></h1>
+        <p className="text-xl md:text-2xl mx-auto">
           Empowering Gambian artisans and preserving cultural heritage through e-commerce
+          {/* TODO */}
         </p>
       </motion.header>
 
@@ -68,10 +69,11 @@ const About = () => {
           <div className="py-8 flex justify-center">
             <Slides slides={slides} />
           </div>
-          <motion.p variants={fadeIn} className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto text-left md:text-center">
-            Banjulo.com is a versatile platform that caters to everyone. Whether you're an
+          <motion.p variants={fadeIn} className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto text-left md:text-xl font-semibold">
+
+            <span className="text-teal-600 font-bold"> Banjulo.com</span> is a versatile platform that caters to everyone. Whether you're an
             artisan, a business, or an individual, our marketplace provides the tools you need to reach a
-            global audience. By combining local culture with global e-commerce trends, Banjulo.com
+            global audience. By combining local culture with global e-commerce trends, <span > Banjulo.com </span>
             helps foster economic growth while celebrating Gambian heritage.
           </motion.p>
           <motion.div
@@ -109,13 +111,13 @@ const About = () => {
             Our Story
           </motion.h2>
           <motion.div variants={fadeIn} className="bg-gray-100 rounded-lg py-8 px-4 mb-8">
-            <p className="text-lg text-gray-700 mb-4">
+            <p className="text-lg md:text-xl text-gray-700 mb-4 max-w-3xl mx-auto font-semibold">
 
-              Banjulo.com was founded to empower local Gambian businesses and artisans by providing a platform for them to showcase their products and skills. Our team, with expertise in sales, marketing, social media, advertising, startup growth, and management, recognized the need for a space that connects Gambians, making it easy to buy and sell within the country.
+              <span className="text-teal-600 font-bold"> Banjulo.com</span> was founded to empower local Gambian businesses and artisans by providing a platform for them to showcase their products and skills. Our team, with expertise in sales, marketing, social media, advertising, startup growth, and management, recognized the need for a space that connects Gambians, making it easy to buy and sell within the country.
               <br />
               <br />
 
-              What began as an idea has evolved into a dynamic marketplace that drives economic growth and celebrates Gambian craftsmanship. Whether you're selling household items, offering services, or showcasing handmade goods, Banjulo.com helps you reach the right audience and thrive locally.
+              What began as an idea has evolved into a dynamic marketplace that drives economic growth and celebrates Gambian craftsmanship. Whether you're selling household items, offering services, or showcasing handmade goods, <span className="text-teal-600 font-bold"> Banjulo.com</span> helps you reach the right audience and thrive locally.
             </p>
 
           </motion.div>
@@ -126,8 +128,8 @@ const About = () => {
               className="w-48 h-48 rounded-full mx-auto mb-4 object-cover"
             />
             <a href='https://www.linkedin.com/company/banjulo' target='_blank' className='text-2xl mb-2 text-teal-500 font-bold'>The Banjulo Team</a>
-            <blockquote className="italic text-lg text-gray-700 max-w-2xl mx-auto my-2">
-              Banjulo.com is more than just a business—it's our way of supporting and uplifting the Gambian community. Our mission is to shine a light on the talent and skills of local artisans and create new opportunities for businesses to succeed.
+            <blockquote className="italic text-lg text-gray-700 max-w-3xl mx-auto my-2  text-left">
+              <span className="text-teal-600 font-bold"> Banjulo.com</span> is more than just a business. It's a way of supporting and uplifting the Gambian community. Our mission is to shine a light on the talent and skills of local artisans and create new opportunities for businesses to succeed.
             </blockquote>
           </motion.div>
         </motion.section>
@@ -171,13 +173,8 @@ const About = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-navy-500 mb-6">Join Us on Our Journey</h2>
 
-
-
-
-
-
-          <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-            Whether you're looking to purchase unique handmade goods or support Gambian artisans, Banjulo.com offers a one-of-a-kind experience that connects people and enable them to celebrates the beauty of The Gambia.
+          <p className="text-lg md:text-xl font-semibold text-gray-700 mb-8 text-left max-w-3xl mx-auto">
+            Whether you're looking to purchase unique handmade goods or support Gambian artisans, <span className="text-teal-600 font-bold"> Banjulo.com</span> offers a one-of-a-kind experience that connects people and enable them to celebrates the beauty of The Gambia.
           </p>
 
 

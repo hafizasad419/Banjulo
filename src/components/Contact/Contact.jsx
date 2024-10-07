@@ -1,6 +1,7 @@
-import React from 'react'
-import { motion } from 'framer-motion'
-import { Mail, Phone, Facebook, Instagram, Linkedin } from 'lucide-react'
+import React, { useState } from 'react'
+import { motion, AnimatePresence } from 'framer-motion'
+import { Mail, Phone, Facebook, Instagram, Linkedin, CheckCircle } from 'lucide-react'
+import { useForm, ValidationError } from '@formspree/react'
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -18,6 +19,26 @@ const staggerChildren = {
 }
 
 const Contact = () => {
+  const [state, handleSubmit] = useForm("form-id") // Replace with your actual Formspree form ID
+  const [submitting, setSubmitting] = useState(false)
+  const [showPopup, setShowPopup] = useState(false)
+
+  const handleFormSubmit = async (event) => {
+    event.preventDefault()
+    setSubmitting(true)
+    await handleSubmit(event)
+    setSubmitting(false)
+    setShowPopup(true)
+    //clear all form fields
+    event.target.reset()
+
+
+  }
+
+  const handlePopupClose = () => {
+    setShowPopup(false)
+  }
+
   return (
     <div className="bg-white min-h-screen">
       <motion.header
@@ -41,7 +62,19 @@ const Contact = () => {
         >
           <motion.section variants={fadeIn}>
             <h2 className="text-3xl font-bold text-navy-500 mb-6">Send Us a Message</h2>
-            <form action="https://formspree.io/f/your-form-id" method="POST" className="space-y-6">
+            <form onSubmit={handleFormSubmit} className="space-y-6">
+              <div>
+                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
+                  Subject
+                </label>
+                <input
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  required
+                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-teal-500 focus:border-transparent"
+                />
+              </div>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
                   Name
@@ -65,18 +98,7 @@ const Contact = () => {
                   required
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-teal-500 focus:border-transparent"
                 />
-              </div>
-              <div>
-                <label htmlFor="subject" className="block text-sm font-medium text-gray-700 mb-1">
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  name="subject"
-                  required
-                  className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-teal-500 focus:border-transparent"
-                />
+                <ValidationError prefix="Email" field="email" errors={state.errors} />
               </div>
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
@@ -89,14 +111,16 @@ const Contact = () => {
                   required
                   className="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-teal-500 focus:border-transparent"
                 ></textarea>
+                <ValidationError prefix="Message" field="message" errors={state.errors} />
               </div>
               <motion.button
                 type="submit"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="w-full bg-teal-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-teal-700 transition-colors duration-300"
+                disabled={state.submitting || submitting}
               >
-                Send Message
+                {submitting ? "Sending..." : "Send Message"}
               </motion.button>
             </form>
           </motion.section>
@@ -121,17 +145,20 @@ const Contact = () => {
                 <a
                   href="https://www.facebook.com/banjulo.gambia"
                   target='_blank'
+                  rel="noopener noreferrer"
                   className="text-gray-600 hover:text-teal-600 transition-colors duration-300">
                   <Facebook className="w-8 h-8" />
                 </a>
                 <a
                   href="https://www.instagram.com/banjulo.gambia/"
                   target='_blank'
+                  rel="noopener noreferrer"
                   className="text-gray-600 hover:text-teal-600 transition-colors duration-300">
                   <Instagram className="w-8 h-8" />
                 </a>
                 <a
                   target='_blank'
+                  rel="noopener noreferrer"
                   href="https://www.linkedin.com/company/banjulo"
                   className="text-gray-600 hover:text-teal-600 transition-colors duration-300">
                   <Linkedin className="w-8 h-8" />
@@ -141,6 +168,38 @@ const Contact = () => {
           </motion.section>
         </motion.div>
       </main>
+
+      <AnimatePresence>
+        {showPopup && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 flex justify-center items-center bg-gray-900 bg-opacity-75 z-50"
+          >
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              className="bg-white dark:bg-gray-800 p-8 rounded-lg max-w-md w-full m-4"
+            >
+              <CheckCircle className="w-16 h-16 text-teal-600 mx-auto mb-4" />
+              <h2 className="text-2xl text-navy-500 dark:text-white font-bold mb-2 text-center">Thank You!</h2>
+              <p className="text-center mb-6 text-gray-600 dark:text-gray-300">Your message has been successfully submitted. We'll get back to you soon.</p>
+              <div className="flex justify-center">
+                <motion.button
+                  whileHover={{ scale: 1.05 }}
+                  whileTap={{ scale: 0.95 }}
+                  onClick={handlePopupClose}
+                  className="px-6 py-2 bg-teal-600 text-white rounded-md hover:bg-teal-700 transition-colors duration-300"
+                >
+                  Close
+                </motion.button>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   )
 }

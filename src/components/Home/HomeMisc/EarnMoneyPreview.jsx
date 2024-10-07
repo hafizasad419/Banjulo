@@ -37,11 +37,11 @@ const EarnMoneyPreview = () => {
           </div>
           <div className="md:w-1/2">
             <img
-              src="https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="/money.jpg"
               alt="Earn Money with Banjulo"
               width={600}
               height={400}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg object-cover"
             />
           </div>
         </div>

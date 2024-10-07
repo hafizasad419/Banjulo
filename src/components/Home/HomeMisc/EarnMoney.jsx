@@ -2,6 +2,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { DollarSign, Wrench, ShoppingBag, Globe, Truck, CreditCard } from 'lucide-react'
 import { Link } from 'react-router-dom'
+import Slides from '../../Slides/Slides'
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -17,6 +18,23 @@ const staggerChildren = {
     }
   }
 }
+
+const slides =[
+  {
+    image:"/guitar.jpg",
+    alt:"guitar"
+  },
+  {
+    image:"/services.jpg",
+    alt:"services"
+  },
+ 
+  {
+    image:"/money.jpg",
+    alt:"money"
+  },
+ 
+]
 
 const EarnMoney = () => {
   const sections = [
@@ -56,6 +74,12 @@ const EarnMoney = () => {
           Earn Money with Banjulo
         </motion.h2>
 
+
+        <div className="flex justify-center items-center my-8">
+          <Slides slides={slides}/>
+        </div>
+
+
         <motion.div variants={staggerChildren} className="space-y-16">
           {sections.map((section, index) => (
             <motion.div key={index} variants={fadeIn} className="flex flex-col md:flex-row items-start md:items-center gap-6">
@@ -71,12 +95,12 @@ const EarnMoney = () => {
             </motion.div>
           ))}
         </motion.div>
-
+        {/* 
         <motion.h3 variants={fadeIn} className="text-2xl font-bold text-navy-500 text-center mt-16 mb-8">
           Here's how Banjulo helps businesses:
-        </motion.h3>
+        </motion.h3> */}
 
-        <motion.div variants={staggerChildren} className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* <motion.div variants={staggerChildren} className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {benefits.map((benefit, index) => (
             <motion.div
               key={index}
@@ -92,15 +116,15 @@ const EarnMoney = () => {
               </div>
             </motion.div>
           ))}
-        </motion.div>
+        </motion.div> */}
 
         <motion.div variants={fadeIn} className="mt-16 text-center">
-        <Link
-                    to={"/contact"}
-                    className="inline-block bg-teal-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 hover:bg-teal-700"
-                >
-                    Start Earning Today!
-                </Link>
+          <Link
+            to={"/contact"}
+            className="inline-block bg-teal-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 hover:bg-teal-700"
+          >
+            Start Earning Today!
+          </Link>
         </motion.div>
       </motion.div>
     </div>
