@@ -1,6 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Mail, Phone, Facebook, Instagram, Twitter } from 'lucide-react'
+import { Mail, Phone, Facebook, Instagram, Linkedin } from 'lucide-react'
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -118,14 +118,23 @@ const Contact = () => {
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-navy-500">Follow Us</h3>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-600 hover:text-teal-600 transition-colors duration-300">
+                <a
+                  href="https://www.facebook.com/banjulo.gambia"
+                  target='_blank'
+                  className="text-gray-600 hover:text-teal-600 transition-colors duration-300">
                   <Facebook className="w-8 h-8" />
                 </a>
-                <a href="#" className="text-gray-600 hover:text-teal-600 transition-colors duration-300">
+                <a
+                  href="https://www.instagram.com/banjulo.gambia/"
+                  target='_blank'
+                  className="text-gray-600 hover:text-teal-600 transition-colors duration-300">
                   <Instagram className="w-8 h-8" />
                 </a>
-                <a href="#" className="text-gray-600 hover:text-teal-600 transition-colors duration-300">
-                  <Twitter className="w-8 h-8" />
+                <a
+                  target='_blank'
+                  href="https://www.linkedin.com/company/banjulo"
+                  className="text-gray-600 hover:text-teal-600 transition-colors duration-300">
+                  <Linkedin className="w-8 h-8" />
                 </a>
               </div>
             </div>

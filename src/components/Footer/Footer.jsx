@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Facebook, Instagram, Twitter } from 'lucide-react'
+import { Facebook, Instagram, Linkedin } from 'lucide-react'
 import { SiPaypal, SiVisa, SiMastercard } from 'react-icons/si'
 
 
@@ -24,9 +24,9 @@ const footerLinks = [
   {
     title: 'Follow Us',
     socialLinks: [
-      { name: 'Facebook', icon: Facebook, url: '#' },
-      { name: 'Instagram', icon: Instagram, url: '#' },
-      { name: 'Twitter', icon: Twitter, url: '#' },
+      { name: 'Facebook', icon: Facebook, url: 'https://www.facebook.com/banjulo.gambia' },
+      { name: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/banjulo.gambia/' },
+      { name: 'Linkedin', icon: Linkedin, url: 'https://www.linkedin.com/company/banjulo' },
     ]
   }
 ]
@@ -43,11 +43,11 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row lg:justify-between">
           <div className="mb-8 lg:mb-0">
-          <Link to="/" className="text-2xl font-bold text-teal-400 transition-colors duration-300">
-          <img 
-          className='rounded w-24'
-          src={`/logo-cropped.jpg`} alt="" />
-        </Link>
+            <Link to="/" className="text-2xl font-bold text-teal-400 transition-colors duration-300">
+              <img
+                className='rounded w-24'
+                src={`/logo-cropped.jpg`} alt="" />
+            </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {footerLinks.map((section, index) => (
@@ -67,7 +67,12 @@ export default function Footer() {
                 {section.socialLinks && (
                   <div className="flex space-x-4">
                     {section.socialLinks.map((social, socialIndex) => (
-                      <a key={socialIndex} href={social.url} className="hover:text-teal-400 transition-colors duration-300">
+                      <a key={socialIndex}
+                        href={social.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label={social.name}
+                        className="hover:text-teal-400 transition-colors duration-300">
                         <social.icon className="h-6 w-6" />
                         <span className="sr-only">{social.name}</span>
                       </a>

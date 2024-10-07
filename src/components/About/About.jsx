@@ -1,7 +1,6 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { ShoppingBag, Globe, Heart, Users, Zap, Award } from 'lucide-react'
-import assanJeng from "../../assets/avatar/assan-jeng-pfp.png"
 import { Link } from 'react-router-dom'
 import SlidesAndText from '../SlidesAndText/SlidesAndText'
 import { Slides } from '../'
@@ -111,22 +110,24 @@ const About = () => {
           </motion.h2>
           <motion.div variants={fadeIn} className="bg-gray-100 rounded-lg py-8 px-4 mb-8">
             <p className="text-lg text-gray-700 mb-4">
-              Banjulo.com was founded by <a href='https://www.linkedin.com/in/assanjeng/' target='_blank' className='text-teal-500 font-bold'>Assan Jeng,</a> a Gambian entrepreneur with extensive international experience in companies like Deel, Alteryx, and Oracle. Assan recognized the untapped potential of Gambian artisans and the lack of an efficient platform to connect their work with buyers  .
+
+              Banjulo.com was founded to empower local Gambian businesses and artisans by providing a platform for them to showcase their products and skills. Our team, with expertise in sales, marketing, social media, advertising, startup growth, and management, recognized the need for a space that connects Gambians, making it easy to buy and sell within the country.
+              <br />
+              <br />
+
+              What began as an idea has evolved into a dynamic marketplace that drives economic growth and celebrates Gambian craftsmanship. Whether you're selling household items, offering services, or showcasing handmade goods, Banjulo.com helps you reach the right audience and thrive locally.
             </p>
-            <p className="text-lg text-gray-700">
-              Assan's vision was to create a marketplace that empowers these artisans and highlights the unique beauty of Gambian craftsmanship. What started as an idea has now blossomed into a thriving platform that connects Gambian artisans to a global audience, fostering economic growth and cultural preservation.
-            </p>
+
           </motion.div>
           <motion.div variants={fadeIn} className="text-center">
             <img
-              src={assanJeng}
+              src={`/logo.jpg`}
               alt="Assan Jeng"
               className="w-48 h-48 rounded-full mx-auto mb-4 object-cover"
             />
-            <a href='https://www.linkedin.com/in/assanjeng/' target='_blank' className='text-2xl mb-2 text-teal-500 font-bold'>Assan Jeng</a>
-            <p className="text-lg text-gray-600 mb-4">Founder & CEO</p>
-            <blockquote className="italic text-lg text-gray-700 max-w-2xl mx-auto">
-              "Banjulo.com is more than just a business—it's a way to give back to the community that shaped me. I want the world to see the beauty and skill that Gambian artisans bring to their craft, and I want to create opportunities for these artisans to thrive in the global marketplace."
+            <a href='https://www.linkedin.com/company/banjulo' target='_blank' className='text-2xl mb-2 text-teal-500 font-bold'>The Banjulo Team</a>
+            <blockquote className="italic text-lg text-gray-700 max-w-2xl mx-auto my-2">
+              Banjulo.com is more than just a business—it's our way of supporting and uplifting the Gambian community. Our mission is to shine a light on the talent and skills of local artisans and create new opportunities for businesses to succeed.
             </blockquote>
           </motion.div>
         </motion.section>
