@@ -63,7 +63,7 @@ const EarnMoney = () => {
   ]
 
   return (
-    <div className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-white pb-16 px-4 sm:px-6 lg:px-8">
       <motion.div
         initial="hidden"
         animate="visible"

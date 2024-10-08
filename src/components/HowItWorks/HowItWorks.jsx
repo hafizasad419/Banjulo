@@ -122,7 +122,7 @@ const HowItWorks = () => {
           </motion.div>
         </motion.section>
 
-      <EarnMoney/>
+        <EarnMoney />
 
         <motion.section
           initial="hidden"
@@ -133,15 +133,15 @@ const HowItWorks = () => {
           <motion.h2 variants={fadeIn} className="text-3xl md:text-4xl font-bold text-navy-500 mb-6 text-center">
             Why Choose Banjulo.com?
           </motion.h2>
-          <motion.div variants={fadeIn} className="bg-gray-100 rounded-lg p-8">
+          <motion.div variants={fadeIn} className="bg-gray-100 rounded-lg px-8">
             <ul className="space-y-4">
               {[
-                "Ethical Shopping: Support artisans directly with fair trade practices",
-                "Unique Products: Every item is one-of-a-kind, handcrafted by skilled artisans",
-                "Global Reach, Local Heart: Connect with Gambian culture from anywhere in the world",
-                "Secure Transactions: Shop with confidence using our trusted payment methods",
-                "Real-Time Tracking: Follow your order from purchase to delivery",
-                "Customer Support: Our dedicated team is always ready to assist you"
+                "Empower Local Sellers: Support Gambian businesses and individuals by buying directly from local sellers, helping boost the local economy.",
+                "Diverse Range of Products: From household items and electronics to handmade crafts and services, find a variety of unique products for every need.",
+                "Local Focus, Regional Reach: Whether you're in The Gambia or neighboring countries, Banjulo.com connects buyers and sellers across the region with ease.",
+                "Secure Transactions: Shop with confidence using our trusted and secure payment methods for a seamless buying experience.",
+                "Real-Time Order Tracking: Keep track of your purchases from the moment you place your order until it's delivered.",
+                "Dedicated Customer Support: Our team is always ready to assist you with any inquiries or issues, ensuring a smooth shopping experience."
               ].map((item, index) => (
                 <li key={index} className="flex items-start">
                   <svg className="w-6 h-6 text-teal-600 mr-2 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">

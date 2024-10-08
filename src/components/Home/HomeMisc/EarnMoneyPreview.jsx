@@ -14,7 +14,7 @@ const EarnMoneyPreview = () => {
       initial="hidden"
       animate="visible"
       variants={fadeIn}
-      className="bg-white py-16 px-4 sm:px-6 lg:px-8"
+      className="bg-white p-4 sm:px-6 lg:px-8"
     >
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row items-center justify-between">

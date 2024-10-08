@@ -58,14 +58,14 @@ const Testimonials = () => {
   ]
 
   return (
-    <div className="bg-gray-100 py-16 px-4 sm:px-6 lg:px-8">
+    <div className="bg-gray-100 px-4 pb-16 sm:px-6 lg:px-8">
       <motion.div
         initial="hidden"
         animate="visible"
         variants={staggerChildren}
         className="max-w-7xl mx-auto"
       >
-        <motion.h2 variants={fadeIn} className="text-3xl md:text-5xl font-bold text-navy-500 text-center mb-12">
+        <motion.h2 variants={fadeIn} className="text-3xl md:text-5xl font-bold text-navy-500 text-center mb-6">
           What Our Users Are Saying?
         </motion.h2>
 
