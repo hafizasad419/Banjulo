@@ -182,9 +182,9 @@ const HowItWorks = () => {
               to={"/contact"}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-block bg-white text-teal-600 font-semibold py-3 px-8 rounded-full text-lg transition duration-300 hover:bg-gray-100 border border-teal-600"
+              className="inline-block bg-white text-teal-600 font-semibold py-3 px-[37px] rounded-full text-lg  transition duration-300 hover:bg-gray-100 border border-teal-600"
             >
-              Become an Artisan
+                Start Selling
             </Link>
           </div>
         </motion.section>

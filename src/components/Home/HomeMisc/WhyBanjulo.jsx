@@ -59,12 +59,12 @@ const WhyBanjulo = () => {
     const featuredProducts = [
         { id: 1, name: "Handwoven Basket", price: 250, image: "https://images.pexels.com/photos/28617395/pexels-photo-28617395/free-photo-of-handcrafted-woven-baskets-and-bird-nests.jpeg?auto=compress&cs=tinysrgb&w=600" },
         { id: 2, name: "Traditional Gambian Dress", price: 699, image: "/fp2.jpeg" },
-        { id: 3, name: "Carved Wooden Mask", price: 240, image: "https://images.pexels.com/photos/9540964/pexels-photo-9540964.jpeg?auto=compress&cs=tinysrgb&w=600" },
+        { id: 3, name: "Phone", price: 3500, image: "/phone.webp" },
         { id: 4, name: "Gambia Shirt", price: 150, image: "/fp1.jpeg" },
         { id: 5, name: "Recycled Glass Bead Necklace", price: 499, image: "https://i.etsystatic.com/20263357/r/il/a56f44/3862659697/il_600x600.3862659697_b33n.jpg" },
         { id: 6, name: "Traditional Shoes", price: 799, image: "/fp3.jpeg" },
         { id: 7, name: "African Drum (Djembe)", price: 1199, image: "https://i.etsystatic.com/30640062/r/il/ea0d1d/6162141198/il_600x600.6162141198_l6j0.jpg" },
-        { id: 8, name: "Kente Cloth Fabric", price: 999, image: "https://i.etsystatic.com/17686157/r/il/68d6c8/4433536748/il_600x600.4433536748_6p4b.jpg" }
+        { id: 8, name: "Car For Sale", price: 299999, image: "/car.webp" }
     ];
 
 

@@ -4,23 +4,23 @@ import { ShoppingBag, Globe, Heart, Users, Zap, Award } from 'lucide-react'
 import { Link } from 'react-router-dom'
 import SlidesAndText from '../SlidesAndText/SlidesAndText'
 import { Slides } from '../'
-import slide1 from "../../assets/About/slide1.jpeg"
-import slide2 from "../../assets/About/slide2.jpeg"
+import slide1 from "../../assets/slides/dress-shop.jpeg"
+import slide2 from "../../assets/slides/appliances.jpeg"
 import slide3 from "../../assets/About/slide3.jpeg"
 import slide4 from "../../assets/About/slide4.jpeg"
-import slide5 from "../../assets/About/slide5.jpeg"
-import slide6 from "../../assets/About/slide6.jpeg"
-import slide7 from "../../assets/About/slide7.jpeg"
+import slide5 from "../../assets/slides/shoes1.jpeg"
+import slide6 from "../../assets/slides/shop1.jpeg"
+import slide7 from "../../assets/slides/shop1.jpeg"
 
 
 const slides = [
   { image: slide3, alt: "Slide 3" },
   { image: slide1, alt: "Slide 1" },
-  { image: slide2, alt: "Slide 2" },
+  { image: slide7, alt: "Slide 7" },
   { image: slide4, alt: "Slide 4" },
+  { image: slide2, alt: "Slide 2" },
   { image: slide5, alt: "Slide 5" },
   { image: slide6, alt: "Slide 6" },
-  { image: slide7, alt: "Slide 7" },
 ];
 
 
