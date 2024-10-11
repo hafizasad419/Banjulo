@@ -6,7 +6,7 @@ import bg from '../../../assets/bg/bg.jpg';
 
 export default function LandingPage() {
   const [email, setEmail] = useState('');
-  const [state, handleSubmit] = useForm("mjkvbddg"); 
+  const [state, handleSubmit] = useForm("mjkvbddg");
   const [submitting, setSubmitting] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
 
@@ -48,10 +48,10 @@ export default function LandingPage() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.8 }}
-            className="text-6xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 drop-shadow-lg"
+            className="text-[3.5rem] leading-[4rem] md:text-6xl lg:text-7xl font-bold mb-6 drop-shadow-lg"
           >
-  Empowering Gambians to
-  <p>Buy & Sell Online<span className="text-teal-400">.</span></p>
+            Empowering Gambians to
+            <p>Buy & Sell Online<span className="text-teal-400">.</span></p>
           </motion.h1>
 
           {/* Subtitle */}
