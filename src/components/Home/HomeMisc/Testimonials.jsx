@@ -22,10 +22,10 @@ const Testimonials = () => {
     {
       id: 1,
       name: "Fatou Ceesay",
-      role: "Artisan",
+      role: "Local Seller",
       image: "https://images.unsplash.com/photo-1507152927179-bc4ebfef7103?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGJsYWNrJTIwcGVyc29ufGVufDB8fDB8fHww",
       productImage: "/placeholder.svg?height=200&width=200",
-      quote: "Banjulo has transformed my business. I can now reach customers   and showcase my traditional Gambian textiles to a global audience.",
+      quote: "Banjulo has transformed how I sell my products. I can now reach customers across The Gambia and beyond, showcasing my items to a wider audience.",
       rating: 5
     },
     {
@@ -34,16 +34,16 @@ const Testimonials = () => {
       role: "Buyer",
       image: "https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YmxhY2slMjBwZXJzb258ZW58MHx8MHx8fDA%3D",
       productImage: "/placeholder.svg?height=200&width=200",
-      quote: "I discovered unique Gambian crafts on Banjulo that I couldn't find anywhere else. The quality and authenticity of the products are outstanding.",
+      quote: "I found unique and high-quality products on Banjulo that I couldn’t get anywhere else. The variety and convenience make it my go-to platform.",
       rating: 5
     },
     {
       id: 3,
       name: "Amie Bojang",
-      role: "Community Leader",
+      role: "Entrepreneur",
       image: "https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8YmxhY2slMjBwZXJzb258ZW58MHx8MHx8fDA%3D",
       productImage: "/placeholder.svg?height=200&width=200",
-      quote: "Banjulo is empowering our local artisans and preserving our cultural heritage. It's making a real difference in our community.",
+      quote: "Banjulo is making a real impact, not just for artisans but for local businesses and individuals. It’s empowering people to sell and thrive in the digital marketplace.",
       rating: 5
     },
     {
@@ -52,7 +52,7 @@ const Testimonials = () => {
       role: "Buyer",
       image: "https://media.istockphoto.com/id/2085204192/photo/african-american-student-with-dental-braces-wearing-jacket-posing-on-street-and-looking-at.webp?a=1&b=1&s=612x612&w=0&k=20&c=0eQ9qwn1UR31BBoePDEikT17k_Vt1Jqz-qd6g5xeTWA=",
       productImage: "/placeholder.svg?height=200&width=200",
-      quote: "The customer service at Banjulo is exceptional. They went above and beyond to ensure my Gambian art piece arrived safely.",
+      quote: "The service at Banjulo is top-notch. They made sure my order arrived smoothly, and the entire experience was seamless.",
       rating: 5
     }
   ]

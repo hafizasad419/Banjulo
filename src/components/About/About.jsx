@@ -51,7 +51,6 @@ const About = () => {
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">About <span> Banjulo.com</span></h1>
         <p className="text-xl md:text-2xl mx-auto">
           Empowering Gambian artisans and preserving cultural heritage through e-commerce
-          {/* TODO */}
         </p>
       </motion.header>
 
@@ -81,12 +80,12 @@ const About = () => {
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
             {[
-              { icon: ShoppingBag, title: "Global Marketplace", description: "Connect Gambian artisans and Businesses with customers  " },
-              { icon: Globe, title: "Cultural Preservation", description: "Promote and preserve Gambian cultural heritage" },
-              { icon: Heart, title: "Artisan Empowerment", description: "Support local artisans in growing their businesses" },
-              { icon: Users, title: "Community Building", description: "Foster a community of artisans and art enthusiasts" },
-              { icon: Zap, title: "Economic Growth", description: "Drive sustainable economic development in The Gambia" },
-              { icon: Award, title: "Quality Assurance", description: "Ensure authentic, high-quality Gambian products" },
+              { icon: ShoppingBag, title: "Global Marketplace", description: "Connecting Gambians with a Platform for Buying, Selling, and Growing Businesses. Banjulo.com brings together individuals, small businesses, and service providers to easily connect with customers." },
+              { icon: Globe, title: "Supporting Local Commerce", description: "Promote and Boost Gambian Businesses. Help local sellers, from artisans to everyday individuals, showcase their products and services, making it easier to thrive in the digital economy." },
+              { icon: Heart, title: "Empowering Sellers", description: "Enable Anyone to Grow Their Business. Whether you’re selling household items, offering services, or running a business, Banjulo empowers everyone to reach their audience." },
+              { icon: Users, title: "Community Building", description: "Creating a Space for Gambians to Buy and Sell Together. Foster a community that connects sellers and buyers across The Gambia, making local commerce more accessible for all." },
+              { icon: Zap, title: "Driving Economic Growth", description: "Supporting Economic Development Across The Gambia. Banjulo encourages sustainable growth by providing a platform for businesses and individuals to succeed." },
+              { icon: Award, title: "Quality and Trust", description: "Ensuring Secure and Reliable Transactions. Provide a safe and trustworthy environment where buyers can find authentic, high-quality products and services." }
             ].map((item, index) => (
               <motion.div
                 key={index}

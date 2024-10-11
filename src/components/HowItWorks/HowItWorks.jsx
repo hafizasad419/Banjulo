@@ -47,10 +47,10 @@ const HowItWorks = () => {
   ]
 
   const features = [
-    { icon: Store, title: "Create Your Shop", description: "Artisans can easily set up their online store" },
-    { icon: BarChart, title: "Sell with Ease", description: "Seamlessly list products, set prices, and manage inventory with easy-to-use tools." },
-    { icon: Globe, title: "Global Reach", description: "Connect with customers  " },
-    { icon: Heart, title: "Support Artisans and Businesses", description: "Every purchase directly supports local craftspeople" }
+    { icon: Store, title: "Create Your Shop", description: "Anyone can easily set up their own online store, whether you’re selling products or offering services." },
+    { icon: BarChart, title: "Sell with Ease", description: "Effortlessly list items, set prices, and manage inventory with user-friendly tools." },
+    { icon: Globe, title: "Expand Your Reach", description: "Connect with customers across The Gambia and beyond, giving your business more visibility." },
+    { icon: Heart, title: "Support Local Sellers", description: "Every purchase helps local businesses and individuals grow, supporting the community as a whole." }
   ]
 
   return (
@@ -167,7 +167,7 @@ const HowItWorks = () => {
               className='md:w-1/3 w-full rounded-full'
               src={slide3} alt="Gmabian Artisans Smiling" /></div>
           <p className="text-left text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-            Whether you're an artisan looking to showcase your crafts or a shopper seeking unique Gambian products, Banjulo.com is your gateway to a world of authentic handmade treasures.
+            Whether you're a local seller looking to showcase your products or a buyer searching for quality items and services, <span className="text-teal-500 font-bold">Banjulo.com</span> is your gateway to a wide variety of offerings from across The Gambia.
           </p>
           <div className="flex flex-col md:flex-row items-center justify-center space-x-4 space-y-4 md:space-y-0">
             <Link
@@ -184,7 +184,7 @@ const HowItWorks = () => {
               whileTap={{ scale: 0.95 }}
               className="inline-block bg-white text-teal-600 font-semibold py-3 px-[37px] rounded-full text-lg  transition duration-300 hover:bg-gray-100 border border-teal-600"
             >
-                Start Selling
+              Start Selling
             </Link>
           </div>
         </motion.section>
