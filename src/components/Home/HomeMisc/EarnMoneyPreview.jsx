@@ -28,7 +28,7 @@ const EarnMoneyPreview = () => {
             <Link to="/how-it-works">
               <span
                
-                className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-teal-600 hover:bg-teal-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-teal-500"
+                className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full shadow-sm text-white bg-orange-500 hover:bg-orange-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-500 duration-300"
               >
                 Learn How It Works
                 <ArrowRight className="ml-2 -mr-1 h-5 w-5" aria-hidden="true" />

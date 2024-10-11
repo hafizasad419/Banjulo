@@ -45,7 +45,7 @@ function HowBanjuloWorks() {
             <div className="flex justify-center pt-16">
                 <Link
                     to={"/contact"}
-                    className="inline-block bg-teal-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 hover:bg-teal-700"
+                    className="inline-block bg-orange-500 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 hover:bg-orange-700"
                 >
                     Get Early Access!
                 </Link>

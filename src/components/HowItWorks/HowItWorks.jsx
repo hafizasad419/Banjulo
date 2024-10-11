@@ -63,7 +63,7 @@ const HowItWorks = () => {
       >
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">How Banjulo.com Works</h1>
         <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-          Connecting Gambian artisans with global customers through a seamless shopping experience
+          Connecting Gambia for a seamless online shopping experience
         </p>
       </motion.header>
 
@@ -169,12 +169,12 @@ const HowItWorks = () => {
           <p className="text-left text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
             Whether you're a local seller looking to showcase your products or a buyer searching for quality items and services, <span className="text-teal-500 font-bold">Banjulo.com</span> is your gateway to a wide variety of offerings from across The Gambia.
           </p>
-          <div className="flex flex-col md:flex-row items-center justify-center space-x-4 space-y-4 md:space-y-0">
+          <div className="flex flex-col md:flex-row items-center justify-center md:space-x-4 space-y-4 md:space-y-0">
             <Link
               to={"/contact"}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-block bg-teal-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 hover:bg-teal-700"
+              className="inline-block bg-orange-500 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 hover:bg-orange-700"
             >
               Start Shopping
             </Link>
@@ -182,7 +182,7 @@ const HowItWorks = () => {
               to={"/contact"}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className="inline-block bg-white text-teal-600 font-semibold py-3 px-[37px] rounded-full text-lg  transition duration-300 hover:bg-gray-100 border border-teal-600"
+              className="inline-block bg-white text-orange-500 font-semibold py-3 md:px-8 px-10 rounded-full text-lg  transition duration-300 hover:bg-gray-100 border border-orange-700"
             >
               Start Selling
             </Link>

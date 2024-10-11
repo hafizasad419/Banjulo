@@ -117,7 +117,7 @@ const Contact = () => {
                 type="submit"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="w-full bg-teal-600 text-white font-semibold py-3 px-6 rounded-md hover:bg-teal-700 transition-colors duration-300"
+                className="w-full bg-orange-500 text-white font-semibold py-3 px-6 rounded-md hover:bg-orange-700 transition-colors duration-300"
                 disabled={state.submitting || submitting}
               >
                 {submitting ? "Sending..." : "Send Message"}

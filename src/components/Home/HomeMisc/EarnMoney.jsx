@@ -121,7 +121,7 @@ const EarnMoney = () => {
         <motion.div variants={fadeIn} className="mt-16 text-center">
           <Link
             to={"/contact"}
-            className="inline-block bg-teal-600 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 hover:bg-teal-700"
+            className="inline-block bg-orange-500 text-white font-semibold py-3 px-8 rounded-full text-lg transition duration-300 hover:bg-orange-700"
           >
             Start Earning Today!
           </Link>
