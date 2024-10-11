@@ -29,7 +29,7 @@ function Slides({ slides, settings }) {
                                 loading="lazy"
                                 src={slide.image}
                                 alt={slide.alt}
-                                className="w-full h-auto object-cover rounded-xl"
+                                className="w-full object-cover rounded-xl max-h-[200px] md:max-h-[350px]"
                             />
                         </div>
                     ))}

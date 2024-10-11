@@ -8,7 +8,7 @@ import slide1 from "../../assets/About/dress-shop.jpeg"
 import slide2 from "../../assets/About/accessories.jpeg"
 import slide3 from "../../assets/About/slide3.jpeg"
 import slide4 from "../../assets/About/slide4.jpeg"
-import slide5 from "../../assets/About/shoes-shop.jpeg"
+import slide5 from "../../assets/About/thumb_Shoes1.jpeg"
 import slide6 from "../../assets/About/accessories.jpeg"
 
 
@@ -16,8 +16,8 @@ import slide6 from "../../assets/About/accessories.jpeg"
 const slides = [
   { image: slide3, alt: "Slide 3" },
   { image: slide1, alt: "Slide 1" },
-  { image: slide4, alt: "Slide 4" },
   { image: slide2, alt: "Slide 2" },
+  { image: slide4, alt: "Slide 4" },
   { image: slide5, alt: "Slide 5" },
   { image: slide6, alt: "Slide 6" },
 
@@ -50,7 +50,7 @@ const About = () => {
       >
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">About <span> Banjulo.com</span></h1>
         <p className="text-xl md:text-2xl mx-auto">
-          Empowering Gambian artisans and preserving cultural heritage through e-commerce
+        Empowering Gambians to Succeed
         </p>
       </motion.header>
 

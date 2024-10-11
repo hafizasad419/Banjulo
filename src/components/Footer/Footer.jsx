@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Facebook, Instagram, Linkedin } from 'lucide-react'
 import { SiPaypal, SiVisa, SiMastercard } from 'react-icons/si'
+import logo from "../../assets/logos/logo.png"
 
 
 const footerLinks = [
@@ -43,11 +44,11 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row lg:justify-between">
           <div className="mb-8 lg:mb-0">
-          <Link to="/" className="font-lobster md:text-3xl text-2xl font-extrabold text-teal-400 hover:text-gray-300 transition-colors duration-300">
-          {/* <img 
-          className='rounded w-24'
-          src={`/logo-cropped.jpg`} alt="" /> */}
-          B a n j u l o 
+          <Link to="/">
+          <img
+            className='w-28 md:w-40'
+            src={logo} alt="" />
+
         </Link>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -62,8 +62,8 @@ const HowItWorks = () => {
         className="bg-teal-600 text-white py-20 px-4 text-center"
       >
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">How Banjulo.com Works</h1>
-        <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-          Connecting Gambia for a seamless online shopping experience
+        <p className="text-xl md:text-2xl mx-auto">
+          Connecting Gambians to buy, sell, and offer services with a seamless online experience.
         </p>
       </motion.header>
 

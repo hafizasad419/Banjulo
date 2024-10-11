@@ -50,8 +50,8 @@ export default function LandingPage() {
             transition={{ delay: 0.2, duration: 0.8 }}
             className="text-6xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 drop-shadow-lg"
           >
-            Connecting Gambia to
-            <p>Buy & Sell Online<span className="text-teal-400">.</span></p>
+  Empowering Gambians to
+  <p>Buy & Sell Online<span className="text-teal-400">.</span></p>
           </motion.h1>
 
           {/* Subtitle */}

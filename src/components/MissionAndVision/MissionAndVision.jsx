@@ -108,16 +108,15 @@ const MissionAndVision = () => {
           <motion.div variants={fadeIn} className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold text-navy-500 mb-6">Our Vision</h2>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-              To be the leading e-commerce platform in The Gambia, driving local businesses’
-              success while promoting the country’s rich culture on the global stage.
+              To be the leading e-commerce platform in The Gambia, empowering individuals and businesses to succeed while showcasing the country’s vibrant culture and opportunities.
 
             </p>
           </motion.div>
           <motion.div variants={staggerChildren} className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { icon: Globe, title: "Wider Reach", description: "Connect Gambian artisans and businesses with customers  " },
-              { icon: Users, title: "Community Building", description: "Foster a thriving ecosystem of artisans and art enthusiasts" },
-              { icon: Palette, title: "Cultural Showcase", description: "Highlight the rich diversity of Gambian craftsmanship" }
+              { icon: Globe, title: "Wider Reach", description: "Connect Gambians—individuals, entrepreneurs, and businesses—with customers both locally and globally." },
+              { icon: Users, title: "Community Building", description: "Foster a thriving ecosystem where sellers and buyers come together to grow, share, and support local commerce." },
+              { icon: Palette, title: "Cultural Showcase", description: "Highlight the rich diversity and creativity of Gambian products and services, celebrating local craftsmanship and innovation." }
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -169,7 +168,7 @@ const MissionAndVision = () => {
         >
           <h2 className="text-3xl md:text-4xl font-bold text-navy-500 mb-6">Join Our Mission</h2>
           <p className="text-lg text-gray-700 mb-8 max-w-3xl mx-auto">
-            Whether you're an artisan looking to showcase your craft or a customer seeking authentic Gambian products, you can be part of our mission to empower communities and preserve cultural heritage.
+            Whether you're a seller looking to grow your business or a buyer seeking quality Gambian products and services, you can be part of our mission to empower communities, support local businesses, and celebrate Gambian culture.
           </p>
           <Link
             to="/contact"
