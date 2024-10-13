@@ -50,7 +50,7 @@ export default function Footer() {
                 src={logo} alt="" />
 
             </Link>
-            <p className='text-left md:text-center text-orange-500 font-semibold text-xs md:text-lg'>Shop Smart, Sell Smart!</p>
+            <p className='text-left md:text-center text-orange-500 font-semibold text-xs md:text-lg'>Shop Smart - Sell Smart!</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {footerLinks.map((section, index) => (
