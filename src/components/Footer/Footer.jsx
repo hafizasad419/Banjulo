@@ -44,12 +44,13 @@ export default function Footer() {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row lg:justify-between">
           <div className="mb-8 lg:mb-0">
-          <Link to="/">
-          <img
-            className='w-28 md:w-40'
-            src={logo} alt="" />
+            <Link to="/">
+              <img
+                className='w-36 md:w-40'
+                src={logo} alt="" />
 
-        </Link>
+            </Link>
+            <p className='text-left md:text-center text-orange-500 font-semibold text-xs md:text-lg'>Shop Smart, Sell Smart!</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {footerLinks.map((section, index) => (
