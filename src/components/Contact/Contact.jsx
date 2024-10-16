@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { Mail, Phone, Facebook, Instagram, Linkedin, CheckCircle } from 'lucide-react'
 import { useForm, ValidationError } from '@formspree/react'
+import FAQs from "../FAQs/FAQs.jsx"
 
 const fadeIn = {
   hidden: { opacity: 0, y: 20 },
@@ -124,7 +125,7 @@ const Contact = () => {
               </motion.button>
             </form>
           </motion.section>
-
+<FAQs/>
           <motion.section variants={fadeIn} className="space-y-8">
             <h2 className="text-3xl font-bold text-navy-500 mb-6">Get in Touch</h2>
             <div className="flex items-center space-x-4">
