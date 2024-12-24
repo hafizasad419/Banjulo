@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useForm, ValidationError } from '@formspree/react';
 import { CheckCircle } from 'lucide-react';
-import bg from '../../../assets/bg/bg.jpg';
+import bg from '/new-bg-img.jpeg';
 
 export default function LandingPage() {
   const [email, setEmail] = useState('');
